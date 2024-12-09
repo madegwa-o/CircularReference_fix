@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user_product
+
+  datasource:
+   url: jdbc:mysql://localhost:3306/test
+   username: dev
+   password: 1234
+   driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # Options: none, update, create, create-drop (choose based on your requirements)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
